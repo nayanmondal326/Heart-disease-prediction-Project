@@ -1,15 +1,15 @@
 # Heart-disease-prediction-Project
-#❤️ Heart Disease Prediction
+#  ❤️ Heart Disease Prediction
 This project aims to predict the presence of heart disease in patients using a supervised machine learning approach on structured clinical data. The project uses various preprocessing techniques and classification models to analyze patient records.
 
-#📊 Dataset
+# 📊 Dataset
 The dataset is loaded from a CSV file (heart.csv).
 
 It contains patient data including age, sex, chest pain type, resting blood pressure, cholesterol, fasting blood sugar, and more.
 
 The target variable is target (1 = presence of heart disease, 0 = absence).
 
-🔍 Data Preprocessing
+# 🔍 Data Preprocessing
 Checked for null values (none found).
 
 Removed duplicate records to ensure data integrity.
@@ -22,8 +22,8 @@ StandardScaler for centering and scaling.
 
 Normalizer for scaling each sample to unit norm.
 
-🧠 Machine Learning Models
-1. Support Vector Classifier (SVC)
+## 🧠 Machine Learning Models
+# 1. Support Vector Classifier (SVC)
 Kernel used: 'rbf'
 
 Trained and evaluated on:
