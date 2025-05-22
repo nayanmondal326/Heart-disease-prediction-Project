@@ -22,8 +22,8 @@ StandardScaler for centering and scaling.
 
 Normalizer for scaling each sample to unit norm.
 
-## 🧠 Machine Learning Models
-# 1. Support Vector Classifier (SVC)
+# 🧠 Machine Learning Models
+## 1. Support Vector Classifier (SVC)
 Kernel used: 'rbf'
 
 Trained and evaluated on:
@@ -36,28 +36,28 @@ Normalized features
 
 Accuracy score computed for each variant.
 
-2. Decision Tree Classifier
+## 2. Decision Tree Classifier
 Criterion: 'entropy'
 
 Also evaluated with standardized and normalized features.
 
 Performance compared with SVC.
 
-🧪 Model Testing
+# 🧪 Model Testing
 Used train_test_split with 80/20 ratio.
 
 Evaluated each model on unseen test data.
 
 Performed prediction for individual patients to demonstrate inference capability.
 
-📈 Key Insights
+# 📈 Key Insights
 Preprocessing significantly impacts model performance.
 
 Both SVC and Decision Tree showed high predictive capabilities.
 
 The system is capable of making real-time predictions on new patient data.
 
-✅ Project Highlights
+# ✅ Project Highlights
 Clean preprocessing pipeline with no missing values.
 
 Comparative model analysis with SVC and Decision Tree.
