@@ -16,18 +16,14 @@ df=pd.read_csv('/content/heart.csv')
 df
 
 df.isnull()
-
 df.info()
 
 df.describe()
-
 df.isnull()
-
 df = df.drop_duplicates()
 df.isnull().sum().sum()
 
 df.target
-
 df.shape
 
 sns.heatmap(df)
@@ -35,20 +31,16 @@ sns.heatmap(df)
 x=df.drop('target',axis=1)
 x
 x.head(20)
-
 y=df['target']
 y
 y.head(20)
 
 x.shape
-
 y.shape
 
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=51)
-
 x_train.shape
-
 y_train.shape
 
 from sklearn.preprocessing import StandardScaler,Normalizer
@@ -64,44 +56,32 @@ x_test_sc=model_sc.transform(x_test)
 from sklearn.svm import SVC
 svc=SVC(kernel='rbf')
 svc_rbf=svc.fit(x_train,y_train)
-
 svc_rbf
-
 svc_rbf.score(x_test,y_test)
-
 svc_rbf_sc=svc.fit(x_train_sc,y_train)
-
 svc_rbf_sc.score(x_test_sc,y_test)
-
 svc_rbf_nr=svc.fit(x_train_nr,y_train)
-
 svc_rbf_nr.score(x_test_nr,y_test)
 
 patient1=df.iloc[2]
 patient1
-
 patient2=x.iloc[2]
 patient2
 
 p_sc=nr.transform(np.array([patient2]))
 p_sc
-
 svc_rbf_nr.predict(p_sc)
 
 from sklearn.tree import DecisionTreeClassifier
 dtc=DecisionTreeClassifier(criterion='entropy',random_state=51)
 dtc_sc=dtc.fit(x_train_sc,y_train)
 dtc_sc
-
 dtc_sc.score(x_test_sc,y_test)
-
 dtc_nr=dtc.fit(x_train_nr,y_train)
 dtc_nr
-
 dtc_nr.score(x_test_nr,y_test)
 
 p_nr=nr.transform(np.array([patient2]))
 p_nr
-
 dtc_nr.predict(p_sc)
 
